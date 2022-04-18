@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Life!生活誌</title>
-  </head>
+  <div class="body"></div>
+  
+  <div class="header"></div>
+    <div class="banner">
+      <img src="https://i.imgur.com/Ex25L1E.jpg">
+        <div class="title">
+          <p>Life!生活誌</p>
+        </div>
+        <div class="dl">
+          <p>質感生活提案</p><br>
+          <p>從細節開始的精緻生活型態</p>
+        </div>
+    </div>
+  
+  <div class="nav"></div>
+  
+  <div class="main">
+      <div class="article"></div>
+      <div class="aside"></div>
+  </div>
+  
+    <div class="footer"></div>
 
   <body>
     <style>
@@ -11,35 +29,15 @@
     </style>
     
     <header>
-      <div class="banner">
-        <img src="https://i.imgur.com/Ex25L1E.jpg">
-        <div class="title">
-            <p>Life!生活誌</p>
-        </div>
-      </div>
       <style>
         .banner img{float: center; position:relative; width: 50%; height: 460px;}
         .banner .title p{width: 100%; position:absolute; top:230px; left:32px; font-size: 50px; color: #616130;}
+        .dl {font: bold 10em /1; color: #616130; font-size: 1.0rem; text-align: left;}
+        .banner .dl p{position:absolute; top:250px; left:32px;}
       </style>
     </header>
     
-    <article>
-        <div class="article">
-          <p>質感生活提案</p><br>
-          <p>從細節開始的精緻生活型態</p>
-        </div>
-      <style>
-        .article {font: bold 10em /1.5; color: #616130; font-size: 1.0rem; text-align: left;}
-        .banner .article p{position:absolute; top:250px; left:32px;}
-      </style>
-    </article>
-    
     <nav>
-      <style>
-        nav > ul {background-color: #E8E8D0; list-style: none; margin: 0; padding: 0; width:80px; height:184px; float:right;}
-        nav a {color: #616130; display: block; font-size: 0.8rem; padding: 10px; text-decoration: none;}
-        nav li:hover {background-color: #D6D6AD; color: #FFFFFF;}
-      </style>
       <ul class="flex-nav">
         <li><a href="#">關於我們</a></li>
         <li><a href="#">精選特輯</a></li>
@@ -47,7 +45,15 @@
         <li><a href="#">友站連結</a></li>
         <li><a href="#">聯絡資訊</a></li>
       </ul>
+      <style>
+        nav > ul {background-color: #E8E8D0; list-style: none; margin: 0; padding: 0; width:80px; height:184px; float:right;}
+        nav a {color: #616130; display: block; font-size: 0.8rem; padding: 10px; text-decoration: none;}
+        nav li:hover {background-color: #D6D6AD; color: #FFFFFF;}
+      </style>
     </nav>
+    
+    <article>
+    </article>
     
     <main>
       <style>
