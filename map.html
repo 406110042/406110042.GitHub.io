@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Puzzle Coffee無標記地圖</title>
+        <title>資訊框：桃園高鐵站附近咖啡廳推薦</title>
         <style>
             #map {
                 width:900px;
@@ -14,15 +14,46 @@
         
         <script type="text/javascript">
             function initMap() {
-            const location = { lat: 25.00808031291056, lng: 121.21344961270579 };
+            const location = { lat: 25.00808031291056, lng: 121.21336378201867 };
+            //display map
             const map = new google.maps.Map(
                 document.getElementById("map"), {
                     center: location,
-                    zoom: 15
+                    zoom: 17
                 }
             );
+            //marker
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,// use map
+                title:'桃園高鐵站',
+            });
+            const marker1 = new google.maps.Marker({
+                position: { lat: 25.01330894828787, lng: 121.21478752669577 },
+                map: map,// use map
+                title:'桃園高鐵站',
+            });
+            //infowindow
+            var infowindow = new google.maps.InfoWindow({
+                content: 'Puzzle Cofee<hr>小清新風早午餐/咖啡廳', //可以用html語言
+                minWidth: 500,//最小寬度
+            });
+            var infowindow1 = new google.maps.InfoWindow({
+                content: '桃園高鐵站<hr>連結桃園與雙北，交通便利', 
+                maxWidth: 100,//最大寬度
+            });
+            // 監聽事件
+            marker.addListener('click', function() {//點選 marker 打開資訊視窗事件
+                infowindow.open(map,marker); 
+            });
+            marker1.addListener('click', function() {
+                infowindow1.open(map,marker1); 
+            });
         }
         window.initMap = initMap;
+
+        
+
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs&callback=initMap"></script>
 
