@@ -17,32 +17,24 @@
         <li><a href="#">聯絡資訊</a></li>
       </ul>
       <style>
-        nav > ul {background-color: #2d432f;
-                  list-style: none;   /* 移除項目符號 */
-                  margin: 0;
-                  padding: 0;}
-        nav a {color: white; /* 移除超連結顏色 */
-               display: block; /* 讓 <a> 填滿 <li> */
-               font-size: 0.9rem;
-               padding: 12px;
-               text-decoration: none;  /* 移除超連結底線 */}
-        nav li:hover {
-        background-color: #3e5b40;
-        color: white; /* 滑鼠移到 <a> 時變成深底淺色 */}
+        nav > ul {background-color: #2d432f; list-style: none; margin: 0; padding: 0;}
+        nav a {color: white; display: block; font-size: 0.9rem; padding: 12px; text-decoration: none;}
+        nav li:hover {background-color: #3e5b40; color: white;}
         .flex-nav {display: flex; justify-content: space-evenly;}
       </style>
     </nav>
     <main>
-      
-      <article>
-        <p>文章分類</p>
-        <map name="文章分類">
+      <article class="文章分類">
+        <header>
+          <p style="font-size: 0.9rem; color: #2d432f;">文章分類</p>
+        </header>
+        <map name="文章分類map">
           <area shape="rect" coords="16,13,319,318" href="article/fashion.html" alt="時尚">
           <area shape="rect" coords="330,13,633,318" href="article/food.html" alt="美食">
           <area shape="rect" coords="644,13,948,318" href="article/travel.html" alt="旅宿">
           <area shape="rect" coords="959,13,1263,318" href="article/selection.html" alt="選物">
         </map>
-          <img src="map.png" border="0" alt="文章分類地圖" usemap="#文章分類" style="display:block; margin:auto;" />
+          <img src="map.png" border="0" alt="文章分類地圖" usemap="#文章分類map" style="display:block; margin:auto;" />
       </article>
     </main>
   </body>
