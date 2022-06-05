@@ -39,6 +39,14 @@
             <img src="輪播圖片3.png" alt="焦點話題3" />
             <span class="info">Image Description 3</span>
           </div>
+          <div>
+            <img src="輪播圖片4.png" alt="焦點話題4" />
+            <span class="info">Image Description 4</span>
+          </div>
+          <div>
+            <img src="輪播圖片5.png" alt="焦點話題5" />
+            <span class="info">Image Description 5</span>
+          </div>
         </div>
         .slider_container {margin: 30px auto;
                            width: 400px;
@@ -54,6 +62,43 @@
                                left: 0;
                                opacity: 0;
                                filter: alpha(opacity=0);}
+        .slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+@-webkit-keyframes round {
+  4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+    /* 0 - 1秒 滑入*/
+  }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+    /* 1- 5秒靜止*/
+  }
+  24% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: -100%;
+    /* 5-6秒滑出*/
+  }
+  26% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: -100%;
+    /* 6-6.5秒變透明*/
+  }
+  28% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: 100%;
+    /* 6.5-7秒回到起始位置*/
+  }
+}
       </article>
       <hr size="3" align="center" noshade width="90%" color="#2d432f">
       <article class="new">
