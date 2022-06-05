@@ -6,10 +6,10 @@
       <title>Life!生活誌</title>
     </head>
     <header>
-      <img src="LOGO.png" style="display:block; margin:auto;" />
+      <img src="LOGO.png" style="width: 800px; height: 154px; display:block; margin:auto;" />
     </header>
     <nav>
-      <ul class="nav">
+      <ul class="flex-nav">
         <li><a href="#">關於我們</a></li>
         <li><a href="#">精選特輯</a></li>
         <li><a href="#">訂閱雜誌</a></li>
@@ -17,9 +17,21 @@
         <li><a href="#">聯絡資訊</a></li>
       </ul>
       <style>
-        nav > ul {background-color: #E8E8D0; list-style: none; margin: 0; padding: 0; width:80px; height:184px;}
-        nav a {color: #616130; display: block; font-size: 0.8rem; padding: 10px; text-decoration: none;}
-        nav li:hover {background-color: #D6D6AD; color: #FFFFFF;}
+        nav > ul {background-color: rgb(230, 230, 230);
+                  list-style: none;   /* 移除項目符號 */
+                  margin: 0;
+                  padding: 0;}
+        nav a {color: inherit; /* 移除超連結顏色 */
+               display: block; /* 讓 <a> 填滿 <li> */
+               font-size: 1.2rem;
+               padding: 10px;
+               text-decoration: none;  /* 移除超連結底線 */}
+
+        /* 滑鼠移到 <a> 時變成深底淺色 */
+        nav li:hover {
+        background-color: rgb(115, 115, 115);
+        color: white;}
+        .flex-nav {display: flex; justify-content: space-evenly;}
       </style>
     </nav>
   </body>
