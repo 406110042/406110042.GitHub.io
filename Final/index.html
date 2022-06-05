@@ -7,36 +7,36 @@
   <body>
     <header>
       <img src="LOGO.png" style="width: 800px; height: 154px; display:block; margin:auto;" />
+      <nav>
+        <ul class="flex-nav">
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">精選特輯</a></li>
+          <li><a href="#">訂閱雜誌</a></li>
+          <li><a href="#">友站連結</a></li>
+          <li><a href="#">聯絡資訊</a></li>
+        </ul>
+        <style>
+          nav > ul {background-color: #2d432f; list-style: none; margin: 0; padding: 0;}
+          nav a {color: white; display: block; font-size: 0.9rem; padding: 12px; text-decoration: none;}
+          nav li:hover {background-color: #3e5b40; color: white;}
+          .flex-nav {display: flex; justify-content: space-evenly;}
+        </style>
+      </nav>
     </header>
-    <nav>
-      <ul class="flex-nav">
-        <li><a href="#">關於我們</a></li>
-        <li><a href="#">精選特輯</a></li>
-        <li><a href="#">訂閱雜誌</a></li>
-        <li><a href="#">友站連結</a></li>
-        <li><a href="#">聯絡資訊</a></li>
-      </ul>
-      <style>
-        nav > ul {background-color: #2d432f; list-style: none; margin: 0; padding: 0;}
-        nav a {color: white; display: block; font-size: 0.9rem; padding: 12px; text-decoration: none;}
-        nav li:hover {background-color: #3e5b40; color: white;}
-        .flex-nav {display: flex; justify-content: space-evenly;}
-      </style>
-    </nav>
     <main>
-      <article class="焦點話題輪播">
+      <article class="hot">
         <header>
           <p style="font-size: 0.9rem; color: #2d432f;">焦點話題</p>
         </header>
       </article>
       <hr size="3" align="center" noshade width="90%" color="#2d432f">
-      <article class="最新文章">
+      <article class="new">
         <header>
           <p style="font-size: 0.9rem; color: #2d432f;">最新文章</p>
         </header>
       </article>
       <hr size="3" align="center" noshade width="90%" color="#2d432f">
-      <article class="文章分類地圖">
+      <article class="map">
         <header>
           <p style="font-size: 0.9rem; color: #2d432f;">文章分類</p>
         </header>
@@ -49,5 +49,8 @@
           <img src="map.png" border="0" alt="文章分類地圖" usemap="#文章分類map" style="display:block; margin:auto;" />
       </article>
     </main>
+    <footer>
+      <p style="font-size: 0.9rem; color: #2d432f;">Life!生活誌版權所有 ©copyright 2022</p>
+    </footer>
   </body>
 </html>
