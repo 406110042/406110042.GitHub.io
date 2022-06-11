@@ -24,16 +24,29 @@
       </nav>
     </header>
     <main>
-      <article class="hot">
-        <p style="text-align: center; font-size: 1.5rem; font-weight:bold; color: #2d432f;">焦點話題</p>
+      <article id="hot">
+        <div class="title">焦點話題</div>
+        <div class="hot_post">
+          <a href="#"><img src="#">這裡會放圖片連結到文章</a>
+        </div>
       </article>
-      <hr size="3" align="center" noshade width="90%" color="#2d432f">
-      <article class="new">
-        <p style="text-align: center; font-size: 1.5rem; font-weight:bold; color: #2d432f;">最新文章</p>
+      <article id="new">
+        <div class="title">最新文章</div>
+        <div class="new_post">
+          <section class="new_post_title">文章1_標題</section>
+          <section class="new_post_text">文章1_內文</section>
+        </div>
+        <div class="new_post">
+          <section class="new_post_title">文章2_標題</section>
+          <section class="new_post_text">文章2_內文</section>
+        </div>
+        <div class="new_post">
+          <section class="new_post_title">文章3_標題</section>
+          <section class="new_post_text">文章3_內文</section>
+        </div>
       </article>
-      <hr size="3" align="center" noshade width="90%" color="#2d432f">
       <article class="map">
-        <p style="text-align: center; font-size: 1.5rem; font-weight:bold; color: #2d432f;">文章分類</p>
+        <div class="title">文章分類</div>
         <map name="文章分類map">
           <area shape="rect" coords="10,9,198,198" href="https://ann406110042.github.io/Final/article/fashion.html" alt="時尚">
           <area shape="rect" coords="206,9,396,198" href="https://ann406110042.github.io/Final/article/food.html" alt="美食">
@@ -42,6 +55,17 @@
         </map>
           <img src="https://i.imgur.com/HjhZbQZ.png" border="0" alt="文章分類地圖" usemap="#文章分類map" style="display:block; margin:auto; padding-bottom:50px;" />
       </article>
+      <style>
+        .title{text-align: center; font-size: 1.5rem; font-weight:bold; color: #2d432f;}
+        .hot_post{display: flex; justify-content: center; align-content: center; align-items: center; flex-wrap: wrap; flex-direction: column;
+                  border-style: dotted; border-color: #2d432f;
+                  margin-left:50px; margin-right:50px; margin-bottom: 20px;}
+        .new_post{display: flex; justify-content: center; align-content: flex-start; align-items: flex-start; flex-wrap: wrap; flex-direction: column;
+                      border-style: dotted; border-color: #2d432f;
+                      margin-left:50px; margin-right:50px; margin-bottom: 20px; padding-top:20px; padding-bottom:20px; padding-left:50px;}
+        .new_post_title{color: #2d432f; font-size: 1.5rem; font-weight:bold;}
+        .new_post_text{color: #2d432f; font-size: 1.0rem;}
+      </style>
     </main>
     <footer id="footer_style">
       <p>Life!生活誌版權所有 ©copyright 2022</p>
