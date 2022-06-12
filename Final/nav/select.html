@@ -24,23 +24,71 @@
       </nav>
     </header>
     <main>
-      <article>
-        <section id="link_banner">
-          <img src="https://i.imgur.com/gOtrlWx.png">
-        </section>
-        <section id="link_text">
-          <div id="link_text_p">
-            <p>暫無</p>
-          </div>
-        </section>
-        <style>
-          #link_banner{display: flex; justify-content: center; padding-top:70px; padding-bottom:70px;}
-          #link_text{display: flex; justify-content: center;
-                      padding:50px; border-style: dotted; border-color: #2d432f;
-                      margin-left:50px; margin-right:50px; margin-bottom:50px;}
-          #link_text_p{color: #2d432f; font-size: 0.9rem;}
-        </style>
+      <article id="select">
+        <div class="select_post">
+          <section class="select_post_photo">
+            <a href="https://ann406110042.github.io/Final/allposts/food2.html"><img src="https://ann406110042.github.io/Final/allposts/photo/穀谷縮圖.png"></a><br><br>
+          </section>
+          <section class="select_post_title">
+            <a href="https://ann406110042.github.io/Final/allposts/food2.html">【美食】嘉義市日式老宅風咖哩屋 #榖谷 #嘉義市東區</a><br><br>
+          </section>
+          <section class="select_post_text">
+            今天要介紹的這間，是在嘉義備受歡迎的咖哩店――穀谷，室內空間分為兩層，一樓是一般的座位，二樓則有榻榻米區和較為低矮的沙發座，整體設計典雅復古，頗具老宅風情......
+          </section>
+        </div>
+        <div class="select_post">
+          <section class="select_post_photo">
+            <a href="https://ann406110042.github.io/Final/allposts/food1.html"><img src="https://ann406110042.github.io/Final/allposts/photo/窟仔縮圖.png"></a><br><br>
+          </section>
+          <section class="select_post_title">
+            <a href="https://ann406110042.github.io/Final/allposts/food1.html">【美食】人氣咖啡廳隱身巷弄 享受復古暗調午茶時光 #窟仔Kula #台南市中西區</a><br><br>
+          </section>
+          <section class="select_post_text">
+            那天我們本在台南幽靜古意的小巷裡散步，一邊感受台南的風情，一邊向著目的地前行，抵達窟仔的時候，離開門營業還有一些時間，然而店門口卻已經排上了小小的隊伍，每個人都帶著期待的神情......
+          </section>
+        </div>
+        <div class="select_post">
+          <section class="select_post_photo">
+            <a href="https://ann406110042.github.io/Final/allposts/travel1.html"><img src="https://ann406110042.github.io/Final/allposts/photo/來了縮圖.png"></a><br><br>
+          </section>
+          <section class="select_post_title">
+            <a href="https://ann406110042.github.io/Final/allposts/travel1.html">【旅宿】台南老宅特色民宿 吹起文青新風潮 #來了，就住一晚 #台南市中西區</a><br><br>
+          </section>
+          <section class="select_post_text">
+            這次要推薦的是台南市極具特色的老宅民宿――來了，就住一晚。走進接待大廳前，會先經過精心布置的公共區域，露天的中庭以綠植點綴，洋溢著一股濃厚的自然文青風，甫一踏入便滿盈悠閒的度假情懷......
+          </section>
+        </div>
+        <div class="select_post">
+          <section class="select_post_photo">
+            <a href="https://ann406110042.github.io/Final/allposts/selection1.html"><img src="https://ann406110042.github.io/Final/allposts/photo/OHANA縮圖.png"></a><br><br>
+          </section>
+          <section class="select_post_title">
+            <a href="https://ann406110042.github.io/Final/allposts/selection1.html">【選物】少女心爆發！甜美夢幻香水品牌推薦 # OHANA MAHAALO #香水 #香氛</a><br><br>
+          </section>
+          <section class="select_post_text">
+            OHANA MAHAALO這個香水品牌，拆開的當下就被可愛精緻的包裝所吸引，方方正正、扁形的香水瓶設計，除了攜帶方便以外，也讓人愛不釋手，今天就要來分享其中三款香調......
+          </section>
+        </div>
       </article>
+      <article class="map">
+        <div class="title">文章分類</div>
+        <map name="文章分類map">
+          <area shape="rect" coords="0,0,395,396" href="https://ann406110042.github.io/Final/article/fashion.html" alt="時尚">
+          <area shape="rect" coords="404,0,799,396" href="https://ann406110042.github.io/Final/article/food.html" alt="美食">
+          <area shape="rect" coords="0,404,395,799" href="https://ann406110042.github.io/Final/article/travel.html" alt="旅宿">
+          <area shape="rect" coords="404,404,799,799" href="https://ann406110042.github.io/Final/article/selection.html" alt="選物">
+        </map>
+          <img src="https://ann406110042.github.io/Final/article/photo/四格文章分類地圖.png"
+                   border="0" alt="文章分類地圖" usemap="#文章分類map" style="display:block; margin:auto; padding-bottom:50px;" />
+      </article>
+      <style>
+        .select_post{display: flex; justify-content: center; align-content: flex-start; align-items: center; flex-wrap: nowrap; flex-direction: row;
+                     border-style: dotted; border-color: #2d432f;
+                     margin-left:50px; margin-right:50px; margin-bottom: 20px; padding-top:20px; padding-bottom:5px; padding-left:20px;}
+        .select_post_title{font-size: 1.5rem; font-weight:bold; padding-left:10px;}
+        .select_post_title a{color: #2d432f;}
+        .select_post_text{color: #2d432f; font-size: 1.0rem; padding-left:10px; padding-right:20px;}
+      </style>
     </main>
     <footer id="footer_style">
       <p>Life!生活誌版權所有 ©copyright 2022</p>
